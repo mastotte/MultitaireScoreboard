@@ -50,7 +50,7 @@ class Mode(Enum):
     Septuple = 7
 
 # NOTES
-# jan 22
+# jan 24
 # ALL terminal inputs will have to be replaced with GUI inputs
 # bini bday
 # 
