@@ -10,19 +10,19 @@ BASE_SCREEN_WIDTH = 2560
 BASE_SCREEN_HEIGHT = 1440
 
 # Full Screen
-#root.attributes('-fullscreen', True)
+root.attributes('-fullscreen', True)
 
 bg_color = 'powder blue'
 
 #calculate screen dimensions
 
 # common laptop screen size is: 1920W x 1080H
-#screen_width = root.winfo_screenwidth()
-#screen_height = root.winfo_screenheight()
+screen_width = root.winfo_screenwidth()
+screen_height = root.winfo_screenheight()
 
 # for laptop screen size testing
-screen_width = 1920
-screen_height = 1080
+#screen_width = 1920
+#screen_height = 1080
 
 #calculate factors for different screen sizes
 h_mod = screen_height / BASE_SCREEN_HEIGHT
