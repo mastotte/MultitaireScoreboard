@@ -14,7 +14,7 @@ root.attributes('-fullscreen', True)
 
 bg_color = 'powder blue'
 
-#calculate screen dimensions
+# calculate screen dimensions
 
 # common laptop screen size is: 1920W x 1080H
 screen_width = root.winfo_screenwidth()
@@ -24,7 +24,7 @@ screen_height = root.winfo_screenheight()
 #screen_width = 1920
 #screen_height = 1080
 
-#calculate factors for different screen sizes
+# calculate factors for different screen sizes
 h_mod = screen_height / BASE_SCREEN_HEIGHT
 w_mod = screen_width / BASE_SCREEN_WIDTH
 font_size = (int) (min(h_mod, w_mod) * 12)
@@ -802,7 +802,24 @@ def determine_sitters(line, round):
             print(f"Player {i} is sitting in round {round}")
             sitters[round].append(i)
 
-    
+def create_table(root, rows, cols, data):
+    # Create a grid of labels to represent the table
+    for i in range(rows):
+        for j in range(cols):
+            # Create a label for each cell
+            label = tk.Label(root, text=data[i][j], borderwidth=1, relief="solid", width=15, height=2)
+            label.grid(row=i, column=j, sticky="nsew")
+
+"""
+Example of sample data for the table
+data = [
+    ["Player", "Score", "Pars", "Standings"],
+    ["Maxwell", "10", "2", "1"],
+    ["Cienna", "8", "3", "2"],
+    ["Alec", "5", "4", "3"],
+    ["Cecilia", "3", "5", "4"]
+]
+"""           
 def main():
 
     #label1 = tk.Label(root, text= '', fg='blue', font=('helvetica', font_size, 'bold'))
