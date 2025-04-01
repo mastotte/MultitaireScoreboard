@@ -23,6 +23,7 @@ screen_height = root.winfo_screenheight()
 # for laptop screen size testing
 # screen_width = 1920
 # screen_height = 1080
+# 
 
 # calculate factors for different screen sizes
 h_mod = screen_height / BASE_SCREEN_HEIGHT
